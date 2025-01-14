@@ -1,0 +1,51 @@
+﻿@using MambaMVC.Areas.Admin.ViewModels
+@model IEnumerable<EmployeeItemVM>
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Employees</h4>
+            
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                
+                                Name
+                            </th>
+                            <th>
+                                Surname
+                            </th>
+                            <th>
+                                Profession
+                            </th>
+                            <th>
+                                Settings
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>@foreach (EmployeeItemVM itemVM in Model)
+                        {
+                            
+                        <tr>
+                            <td>
+                                @itemVM.Name
+                            </td>
+                           
+                            <td>
+                                    <a class="btn btn-succes"><i class="mdi mdi-grease-pencil"></i></a>
+                                    <a class="btn vtn-warning"><i class="mdi mdi-information-variant"></i></a>
+                                    <a class="btn btn-danger"><i class="mdi mdi-delete"></i></a>
+                            </td>
+                            
+                        </tr>
+                        }
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿@using MambaMVC.Areas.Admin.ViewModels
+
+@model EmployeeCreateVM
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Horizontal Form</h4>
+            <p class="card-description">
+                Horizontal form layout
+            </p>
+            <form class="forms-sample">
+                <div class="form-group row">
+                    <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <label asp-for="Image"></label>
+                        <input asp-for="Image" class="form-control" id="exampleInputUsername2" placeholder="Image">
+                        <span asp-validation-for="Image"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" class="form-control" id="exampleInputUsername2" placeholder="Name">
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <label asp-for="Surname"></label>
+                        <input asp-for="Surname"  class="form-control" id="exampleInputUsername2" placeholder="Surname">
+                        <span asp-validation-for="Surname"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <label asp-for="ProfessionId"></label>
+                        <input asp-for="ProfessionId"  class="form-control" id="exampleInputUsername2" placeholder="ProfessionId">
+                        <span asp-validation-for="ProfessionId"></span>
+                    </div>
+                </div>
+              
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
