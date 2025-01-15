@@ -17,7 +17,7 @@ namespace MambaMVC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            IEnumerable<ProfessionItemVM> itemVMs = await _context.Professions.Select(p => new ProfessionItemVM { Name = p.Name,Id=p.Id }).ToListAsync();
+            IEnumerable<ProfessionItemVM> itemVMs = await _context.Professions.Select(p => new ProfessionItemVM { Name = p.Name, Id = p.Id }).ToListAsync();
             return View(itemVMs);
         }
         public IActionResult Create()
@@ -27,52 +27,52 @@ namespace MambaMVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(ProfessionCreateVM createVM)
         {
-            if(!ModelState.IsValid) return View(createVM);
-            if(await _context.Professions.AnyAsync(p => p.Name == createVM.Name))
+            if (!ModelState.IsValid) return View(createVM);
+            if (await _context.Professions.AnyAsync(p => p.Name == createVM.Name))
             {
                 ModelState.AddModelError(nameof(createVM.Name), "Profession already exists");
                 return View(createVM);
-
             }
             Profession profession = new Profession()
             {
                 Name = createVM.Name,
             };
             await _context.Professions.AddAsync(profession);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
         public async Task<IActionResult> Update(int? id)
         {
             if (id == null) return BadRequest();
-            Profession profession = await _context.Professions.FirstOrDefaultAsync(p => p.Id==id);  
+            Profession profession = await _context.Professions.FirstOrDefaultAsync(p => p.Id == id);
             if (profession == null) return NotFound();
 
             ProfessionUpdateVM updateVM = new ProfessionUpdateVM()
             {
-                Name= profession.Name,
-            }; 
+                Name = profession.Name,
+            };
             return View(updateVM);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(int? id , ProfessionItemVM updateVM)
+        public async Task<IActionResult> Update(int? id, ProfessionItemVM updateVM)
         {
             if (id == null) return BadRequest();
             Profession profession = await _context.Professions.FirstOrDefaultAsync(p => p.Id == id);
             if (profession == null) return NotFound();
 
-            if(await _context.Professions.AnyAsync(p => p.Name == updateVM.Name && p.Id != id))
+            if (await _context.Professions.AnyAsync(p => p.Name == updateVM.Name && p.Id != id))
             {
                 ModelState.AddModelError(nameof(updateVM.Name), "Profession already Exists");
                 return View(updateVM);
             }
 
-            profession.Name= updateVM.Name;
+            profession.Name = updateVM.Name;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        public async Task<IActionResult> Delete(int? id) {
+        public async Task<IActionResult> Delete(int? id)
+        {
             if (id == null) return BadRequest();
             Profession profession = await _context.Professions.FirstOrDefaultAsync(p => p.Id == id);
             if (profession == null) return NotFound();

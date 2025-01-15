@@ -1,18 +1,25 @@
-﻿@using MambaMVC.Areas.Admin.ViewModels
+﻿
+
+@using MambaMVC.Areas.Admin.ViewModels
 @using MambaMVC.Models
 
-@model EmployeeCreateVM
+@model EmployeeUpdateVM
 <div class="col-md-6 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Create Employee</h4>
-            
-            <form class="forms-sample" method="post" enctype="multipart/form-data" >
+            <h4 class="card-title">Update Employee</h4>
+
+            <form class="forms-sample" method="post" enctype="multipart/form-data">
+                <div class="form-group row">
+                    <img style="width:150px; height:150px;" src="~/admin/assets/images/@Model.Image" />
+                    <input asp-for="Image" class="form-control" type="hidden">
+                </div>
+
                 <div class="form-group row">
                     <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Photo</label>
                     <div class="col-sm-9">
                         <label asp-for="Photo"></label>
-                        <input asp-for="Photo" class="form-control" id="exampleInputUsername2" placeholder="Image" accept="image/*">
+                        <input asp-for="Photo" class="form-control" accept="image/*">
                         <span class="text-danger" asp-validation-for="Photo"></span>
                     </div>
                 </div>
@@ -28,7 +35,7 @@
                     <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Surname</label>
                     <div class="col-sm-9">
                         <label asp-for="Surname"></label>
-                        <input asp-for="Surname"  class="form-control" id="exampleInputUsername2" placeholder="Surname">
+                        <input asp-for="Surname" class="form-control" id="exampleInputUsername2" placeholder="Surname">
                         <span class="text-danger" asp-validation-for="Surname"></span>
                     </div>
                 </div>
@@ -36,13 +43,13 @@
                     <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Profession</label>
                     <div class="col-sm-9">
                         <label asp-for="ProfessionId"></label>
-                        <select asp-for="ProfessionId"  class="form-control" asp-items="new SelectList(Model.Professions,nameof(Profession.Id),nameof(Profession.Name))">
-                           <option disabled selected>Choose Profession </option>
+                        <select asp-for="ProfessionId" class="form-control" asp-items="new SelectList(Model.Professions,nameof(Profession.Id),nameof(Profession.Name))">
+                            <option disabled selected>Choose Profession </option>
                         </select>
                         <span class="text-danger" asp-validation-for="ProfessionId"></span>
                     </div>
                 </div>
-              
+
                 <button type="submit" class="btn btn-primary me-2">Submit</button>
                 <button class="btn btn-light">Cancel</button>
             </form>
