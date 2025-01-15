@@ -97,10 +97,6 @@
       "PackagePath": "staticwebassets\\Admin\\assets\\fonts\\Roboto\\Roboto-Regular.woff2"
     },
     {
-      "Id": "C:\\Users\\Allahverdi\\Desktop\\Exam Preparation\\Mamba\\MambaMVC\\wwwroot\\Admin\\assets\\images\\175525c8-15a1-41-1-270x300.jpg",
-      "PackagePath": "staticwebassets\\Admin\\assets\\images\\175525c8-15a1-41-1-270x300.jpg"
-    },
-    {
       "Id": "C:\\Users\\Allahverdi\\Desktop\\Exam Preparation\\Mamba\\MambaMVC\\wwwroot\\Admin\\assets\\images\\52e5083d-a3fc-41-1-770x300.jpg",
       "PackagePath": "staticwebassets\\Admin\\assets\\images\\52e5083d-a3fc-41-1-770x300.jpg"
     },
@@ -427,6 +423,10 @@
     {
       "Id": "C:\\Users\\Allahverdi\\Desktop\\Exam Preparation\\Mamba\\MambaMVC\\wwwroot\\assets\\img\\apple-touch-icon.png",
       "PackagePath": "staticwebassets\\assets\\img\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Allahverdi\\Desktop\\Exam Preparation\\Mamba\\MambaMVC\\wwwroot\\assets\\img\\ba99e80c-05c7-4Screenshot_9-12-2024_2555_meet.google.com.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\ba99e80c-05c7-4Screenshot_9-12-2024_2555_meet.google.com.jpeg"
     },
     {
       "Id": "C:\\Users\\Allahverdi\\Desktop\\Exam Preparation\\Mamba\\MambaMVC\\wwwroot\\assets\\img\\favicon.png",

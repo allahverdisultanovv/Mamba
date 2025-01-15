@@ -21,7 +21,6 @@ wwwroot\Admin\assets\fonts\Roboto\Roboto-Regular.eot
 wwwroot\Admin\assets\fonts\Roboto\Roboto-Regular.ttf
 wwwroot\Admin\assets\fonts\Roboto\Roboto-Regular.woff
 wwwroot\Admin\assets\fonts\Roboto\Roboto-Regular.woff2
-wwwroot\Admin\assets\images\175525c8-15a1-41-1-270x300.jpg
 wwwroot\Admin\assets\images\52e5083d-a3fc-41-1-770x300.jpg
 wwwroot\Admin\assets\images\57d017ef-9d43-41-1-270x300.jpg
 wwwroot\Admin\assets\images\77400789-31cb-41-1-270x300.jpg
@@ -104,6 +103,7 @@ wwwroot\assets\css\main.css
 wwwroot\assets\img\about.jpg
 wwwroot\assets\img\about-2.jpg
 wwwroot\assets\img\apple-touch-icon.png
+wwwroot\assets\img\ba99e80c-05c7-4Screenshot_9-12-2024_2555_meet.google.com.jpeg
 wwwroot\assets\img\favicon.png
 wwwroot\assets\img\hero-carousel\hero-carousel-1.jpg
 wwwroot\assets\img\hero-carousel\hero-carousel-2.jpg

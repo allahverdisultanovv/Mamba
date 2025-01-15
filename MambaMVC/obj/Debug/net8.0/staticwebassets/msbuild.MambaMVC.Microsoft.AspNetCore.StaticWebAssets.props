@@ -414,24 +414,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Admin\assets\fonts\Roboto\Roboto-Regular.woff2'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Admin\assets\images\175525c8-15a1-41-1-270x300.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>MambaMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MambaMVC</BasePath>
-      <RelativePath>Admin/assets/images/175525c8-15a1-41-1-270x300.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>afbbdl4qs1</Fingerprint>
-      <Integrity>apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Admin\assets\images\175525c8-15a1-41-1-270x300.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Admin\assets\images\52e5083d-a3fc-41-1-770x300.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>MambaMVC</SourceId>
@@ -1907,6 +1889,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\apple-touch-icon.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\ba99e80c-05c7-4Screenshot_9-12-2024_2555_meet.google.com.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MambaMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MambaMVC</BasePath>
+      <RelativePath>assets/img/ba99e80c-05c7-4Screenshot_9-12-2024_2555_meet.google.com.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>g1gax0liky</Fingerprint>
+      <Integrity>tADO1PrJHG8xvE/ChgsX6vHYYSuZx06k8MevAQHI0SI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\ba99e80c-05c7-4Screenshot_9-12-2024_2555_meet.google.com.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\favicon.png'))">
       <SourceType>Package</SourceType>

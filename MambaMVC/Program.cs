@@ -7,18 +7,18 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<AppDbContext>(opt=>opt.UseSqlServer(builder.Configuration.GetConnectionString("default")));
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("default")));
 builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 {
     opt.User.RequireUniqueEmail = true;
-    opt.Password.RequireNonAlphanumeric=true;
+    opt.Password.RequireNonAlphanumeric = true;
     opt.Password.RequiredLength = 8;
     opt.Lockout.AllowedForNewUsers = true;
     opt.Lockout.MaxFailedAccessAttempts = 3;
     opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
 
 }
-        
+
 ).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
 
 var app = builder.Build();
@@ -36,6 +36,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

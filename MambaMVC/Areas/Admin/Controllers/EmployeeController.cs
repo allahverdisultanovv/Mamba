@@ -54,7 +54,7 @@ namespace MambaMVC.Areas.Admin.Controllers
 
             string fileName = Guid.NewGuid().ToString().Substring(0, 15) + createVM.Photo.FileName;
             string path = String.Empty;
-            string[] roots = { _env.WebRootPath, "admin", "assets", "images" };
+            string[] roots = { _env.WebRootPath, "assets", "img" };
             for (int i = 0; i < roots.Length; i++)
             {
                 path = Path.Combine(path, roots[i]);
@@ -122,7 +122,7 @@ namespace MambaMVC.Areas.Admin.Controllers
                 }
                 string fileName = Guid.NewGuid().ToString().Substring(0, 15) + updateVM.Photo.FileName;
                 string path = String.Empty;
-                string[] roots = { _env.WebRootPath, "admin", "assets", "images" };
+                string[] roots = { _env.WebRootPath, "assets", "img" };
                 for (int i = 0; i < roots.Length; i++)
                 {
                     path = Path.Combine(path, roots[i]);
@@ -150,7 +150,7 @@ namespace MambaMVC.Areas.Admin.Controllers
             if (employee is null) return NotFound();
 
             string path = String.Empty;
-            string[] roots = { _env.WebRootPath, "admin", "assets", "images" };
+            string[] roots = { _env.WebRootPath, "assets", "img" };
             for (int i = 0; i < roots.Length; i++)
             {
                 path = Path.Combine(path, roots[i]);
